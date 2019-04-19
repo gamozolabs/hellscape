@@ -44,7 +44,7 @@ There are 6 bugs in hellscape
 
 ## Code-coverage findable bug
 
-This is a simple bug which any any coverage-based fuzzer can find. It compares one byte at a time, where each compare is a unique compare. Meaning each byte "found" will cause a new coverage event. To my knowledge this is the only bug that any traitional tool like AFL could find, as it's the only one that can be found with only coverage.
+This is a simple bug which any any coverage-based fuzzer can find. It compares one byte at a time, where each compare is a unique compare. Meaning each byte "found" will cause a new coverage event. To my knowledge this is the only bug that any traitional tool like AFL could find, as it's the only one that can be found with only code-coverage.
 
 The input for this crash is `\x00\x00\x00\x00MAGICSTRING`
 
